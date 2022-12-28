@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom"
 import http from "../../http"
 import { ICategoria } from "../../interfaces/ICategoria"
 import BotaoNavegacao from "../BotaoNavegacao"
+import MiniCarrinho from "../MiniCarrinho"
 import ModalCadastroUsuario from "../ModalCadastroUsuario"
 import ModalLoginUsuario from "../ModalLoginUsuario"
 import logo from './assets/logo.png'
@@ -91,6 +92,9 @@ const BarraNavegacao = () => {
                 <>
                     <li>
                         <Link to="/minha-conta/pedidos">Minha conta</Link>
+                    </li>
+                    <li>
+                        <MiniCarrinho />
                     </li>
                     <li>
                         <BotaoNavegacao 
