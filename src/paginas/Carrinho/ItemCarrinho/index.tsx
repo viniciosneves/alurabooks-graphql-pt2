@@ -59,7 +59,7 @@ const ItemCarrinho = ({ item } : ItemCarrinhoProps) => {
                 />
             </div>
             <div>
-                <button className="btn-excluir">
+                <button className="btn-excluir" onClick={() => removerItemCarrinho(item)}>
                     <img src={lixeira} alt="Ícone de uma lixeira" />
                 </button>
             </div>
